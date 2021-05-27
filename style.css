@@ -1,0 +1,465 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.6;
+}
+ol,
+ul {
+  list-style: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+body {
+  font-family: "Playfair Display", serif;
+}
+h2 {
+  color: #02556d;
+  font-size: 36px;
+  font-weight: 700;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4f4f4f;
+  font-family: "lato";
+}
+
+/* header page */
+header {
+  width: 100%;
+  background: url(./src/image1.jpg) no-repeat center right;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  height: 100vh;
+}
+.cover-photo {
+  display: none;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-left: 100px;
+}
+.info > div {
+  padding: 0 10px;
+}
+.info p {
+  font-size: 24px;
+  color: #4f4f4f;
+  font-weight: 400;
+}
+.info h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #02556d;
+  margin: 20px 0;
+  font-family: "Playfair Display", serif !important;
+}
+.button {
+  margin: 40px 0;
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  border: 1px solid #30c8d6;
+  color: #30c8d6;
+  text-align: center;
+  padding: 13px 20px;
+  border-radius: 10px;
+  width: 145px;
+  box-sizing: border-box;
+  /* background-color: #e1f1ff; */
+}
+.featured {
+  color: #ffffff;
+  background-color: #30c8d6;
+  margin-left: 10px;
+}
+
+/* introduction page */
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+.intro {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 70px;
+}
+.profile-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  /* margin-left: 100px; */
+}
+.profile-photo img {
+  width: 100%;
+}
+.profile-para {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 40%;
+  padding: 0 10px;
+}
+.profile-para p {
+  font-size: 1contain6px;
+  font-weight: 400;
+  color: #828282;
+  font-family: "lato";
+}
+
+/* personal interest page */
+.personal-interests {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
+}
+.personal-interests > div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.personal-interests h2 {
+  text-align: center;
+}
+.interest-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+}
+.interests {
+  width: 100%;
+  border-bottom: 1px solid #bdbdbd;
+  padding: 30px 0;
+}
+.interests:last-child {
+  border-bottom: none;
+}
+.interests h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4f4f4f;
+}
+.my-photo {
+  width: 40%;
+  height: auto;
+}
+.my-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+/* my blog page */
+
+.my-blog {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my-blog h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.my-blog h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #02556d;
+  padding-top: 0.5rem;
+}
+h4 {
+  font-size: 16px;
+  font-family: "lato";
+  color: #4f4f4f;
+}
+.my-blog > a {
+  margin: 40px 0;
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  border: 1px solid #30c8d6;
+  color: #30c8d6;
+  padding: 13px 60px;
+  border-radius: 10px;
+}
+.blog-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.blog-article {
+  width: 30%;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 20px;
+}
+.blog-article img {
+  width: 100%;
+}
+.blog-article p {
+  font-size: 14px;
+  font-family: "lato";
+  color: #828282;
+  padding-top: 1rem;
+}
+.blog-article a {
+  font-size: 18px;
+  font-family: "lato";
+  font-weight: 700;
+  color: #30c8d6;
+  padding-top: 15px;
+  display: block;
+}
+
+/* my post page */
+.my-post {
+  text-align: center;
+  margin: 50px 0;
+}
+.my-post img {
+  width: 60%;
+}
+.my-post h2 {
+  padding-bottom: 25px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  header {
+    width: 100%;
+    background-image: url(./src/image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-image: none;
+    flex-direction: column;
+  }
+  .info {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 5rem 0;
+  }
+  .info p {
+    font-size: 24px;
+    font-family: "Playfair Display", serif !important;
+  }
+  .info h1 {
+    font-size: 36px;
+    font-family: "Playfair Display", serif !important;
+    margin: 0;
+  }
+  .cover-photo {
+    width: 100%;
+    display: flex;
+  }
+  .cover-photo img {
+    width: 100%;
+    height: 100%;
+  }
+  .button {
+    margin: 30px 0;
+    /* padding: 10px 40px; */
+  }
+
+  /* introduction page */
+  h2 {
+    font-size: 24px;
+  }
+
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .intro {
+    width: 100%;
+    flex-direction: column;
+  }
+  .profile-photo {
+    width: 100%;
+  }
+  .profile-photo img {
+    width: 100%;
+  }
+  .profile-para {
+    width: 100%;
+  }
+  .profile-para h2 {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  /* personal interestpage */
+  .personal-interests {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .personal-interests > div {
+    flex-direction: column;
+    margin: 0;
+  }
+  .interest-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .my-photo {
+    width: 100%;
+  }
+  .my-photo img {
+    width: 100%;
+  }
+
+  /* my blog page */
+  .my-blog {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .my-blog h2 {
+    padding-bottom: 0.5rem;
+  }
+  .blog-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .blog-article {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .blog-article img {
+    width: 100%;
+  }
+  /* my post page */
+  .my-post {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .my-post img {
+    width: 100%;
+  }
+}
